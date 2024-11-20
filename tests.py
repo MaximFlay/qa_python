@@ -20,5 +20,26 @@ class TestBooksCollector:
         # словарь books_rating, который нам возвращает метод get_books_rating, имеет длину 2
         assert len(collector.get_books_rating()) == 2
 
-    # напиши свои тестыfffff ниже
+    # напиши свои тесты ниже
     # чтобы тесты были независимыми в каждом из них создавай отдельный экземпляр класса BooksCollector()
+
+    def test_set_book_genre(self):  # установка жанра книги
+        collector = BooksCollector()
+        collector.add_new_book('Зомби')
+        collector.set_book_genre('Ужасы')
+        assert collector.get_books_genre('Зомби') == 'Ужасы'
+
+
+    def test_get_books_with_specific_genre(self): #выводим список книг с определённым жанром
+        collector = BooksCollector()
+        collector.add_new_book()
+
+
+
+
+
+
+
+
+
+
