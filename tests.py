@@ -10,8 +10,8 @@ class TestBooksCollector:
 
     def test_add_new_book(self): # Проверка добавление новой  книги
         collector = BooksCollector()
-        collector.add_new_book('Гарри Поттер')
-        assert "Гарри Поттер" in collector.books_genre
+        collector.add_new_book('Гаррик Поттер')
+        assert "Гаррик Поттер" in collector.books_genre
         assert len(collector.books_genre) == 1
 
     def test_set_book_genre(self):  #Проверка  установки  жанра книги
